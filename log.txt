@@ -1,0 +1,64 @@
+Host: jinx.morrkes.tmweb.ru
+Date: 2013-12-28 00:34:36
+Module: main
+ MySql Query Error: UPDATE b_clouds_file_upload SET `PART_FAIL_COUNTER` = PART_FAIL_COUNTER + 1 WHERE ID = '18bfd23a2dadadd9602b7a8170c5cdc6' [MySQL server has gone away]
+    CDatabase::Query < CAllDatabase::QueryBind < CCloudStorageUpload::Next < require_once
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/general/database.php:377
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/clouds/classes/general/storage_upload.php:177
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/tools/backup.php:444
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/tools/backup.php:2
+----------
+Host: jinx.morrkes.tmweb.ru
+Date: 2014-01-03 21:27:01
+Module: main
+File: /home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/pull/classes/general/pull_stack.php<br>Line: 16 MySql Query Error: 
+				SELECT ps.ID, ps.MESSAGE
+				FROM b_pull_stack ps LEFT JOIN b_pull_channel pc ON pc.CHANNEL_ID = ps.CHANNEL_ID
+				WHERE ps.CHANNEL_ID = '' AND ps.ID > pc.LAST_ID []
+    CDatabase::Query < CAllPullStack::Get < include < include_once < ExecuteModuleEventEx
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/pull/classes/general/pull_stack.php:16
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/components/bitrix/pull.request/ajax.php:79
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/pull/ajax_hit.php:6
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/general/module.php:443
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/general/main.php:4546
+----------
+Host: jinx.morrkes.tmweb.ru
+Date: 2014-01-03 21:27:01
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				
+			LIMIT 1
+		 []
+    CDatabase::Query < CAgent::ExecuteAgents < CAgent::CheckAgents < require_once < require_once
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/mysql/agent.php:78
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/include.php:1
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/include/prolog_before.php:14
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/include/prolog.php:11
+----------
+Host: jinx.morrkes.tmweb.ru
+Date: 2014-01-03 21:27:04
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				
+			LIMIT 1
+		 []
+    CDatabase::Query < CAgent::ExecuteAgents < CAgent::CheckAgents < require_once < require_once
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/mysql/agent.php:78
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/include.php:1
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/include/prolog_before.php:14
+	/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/include/prolog.php:11
+----------

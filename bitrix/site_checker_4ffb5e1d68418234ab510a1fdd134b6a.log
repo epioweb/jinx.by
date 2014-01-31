@@ -1,0 +1,195 @@
+2013-Dec-06 18:05:58 Наличие необходимых модулей php (check_php_modules): Ok
+Все необходимые модули установлены
+2013-Dec-06 18:05:58 Обязательные параметры PHP (check_php_settings): Fail
+Ошибка! Значение max_input_vars должно быть не ниже 10000. Текущее значение: 3000
+2013-Dec-06 18:05:58 Модули веб сервера (check_security): Ok
+Конфликтов не выявлено
+2013-Dec-06 18:05:58 Значения переменных сервера (check_server_vars): Ok
+Корректные
+2013-Dec-06 18:05:58 Сохранение сессии (check_session): Ok
+50% done
+2013-Dec-06 18:05:58 Сохранение сессии (check_session): Ok
+Успешно
+2013-Dec-06 18:05:58 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+Правильные. Сайт работает в UTF кодировке
+2013-Dec-06 18:05:58 Работа с сокетами (check_socket): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:05:59 Лишний вывод в файлах конфигурации (check_dbconn): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:05:59 Выполнение агентов на cron (check_bx_crontab): Warning
+Замечание: Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron
+2013-Dec-06 18:05:59 Сохранение сессии без UserAgent (check_session_ua): Ok
+50% done
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+2013-Dec-06 18:05:59 Сохранение сессии без UserAgent (check_session_ua): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:05:59 Настройки сайтов (check_sites): Ok
+Правильные
+2013-Dec-06 18:05:59 Служебные скрипты в корне сайта (check_install_scripts): Ok
+Отсутствуют
+2013-Dec-06 18:05:59 Передача объектов по ссылке (check_clone): Ok
+Успешно
+2013-Dec-06 18:05:59 Размер стека и pcre.recursion_limit (check_pcre_recursion): Warning
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Замечание: Возможны проблемы в работе с длинными строками из-за системных ограничений
+2013-Dec-06 18:05:59 Вызов method_exists на строке (check_method_exists): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:00 Загрузка файла (check_upload): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:00 Загрузка файла больше 4Мб (check_upload_big): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:00 Загрузка файла через php://input (check_upload_raw): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:00 Передача POST запроса с большим числом параметров (check_post): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:00 Отправка почты (check_mail): Ok
+Успешно
+2013-Dec-06 18:06:00 Отправка почтового сообщения больше 64Кб (check_mail_big): Ok
+Успешно
+2013-Dec-06 18:06:00 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
+Успешно
+2013-Dec-06 18:06:00 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+50% done
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+2013-Dec-06 18:06:01 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:01 Фактическое ограничение памяти (check_memory_limit): Ok
+20% done
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+2013-Dec-06 18:06:01 Фактическое ограничение памяти (check_memory_limit): Ok
+40% done
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+2013-Dec-06 18:06:01 Фактическое ограничение памяти (check_memory_limit): Ok
+60% done
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+2013-Dec-06 18:06:01 Фактическое ограничение памяти (check_memory_limit): Ok
+80% done
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+== Request ==
+GET /bitrix/admin/site_checker.php?test_type=memory_test&unique_id=2b51895b6e6f02eed9411de4d70ae8a6&max=127 HTTP/1.1
+Host: jinx.morrkes.tmweb.ru
+
+
+== Response ==
+HTTP/1.1 200 OK
+Server: nginx/1.4.1
+Date: Fri, 06 Dec 2013 14:06:01 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 239
+Connection: keep-alive
+X-Powered-By: PHP/5.3.27-1~dotdeb.4
+
+== Body ==
+<br />
+<b>Fatal error</b>:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1048577 bytes) in <b>/home/m/morrkes/morrkes-jinx.tmweb.ru/public_html/bitrix/modules/main/admin/site_checker.php</b> on line <b>122</b><br />
+
+==========
+2013-Dec-06 18:06:02 Фактическое ограничение памяти (check_memory_limit): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Не менее 96 М
+2013-Dec-06 18:06:02 Работа с файлами кеша (check_cache): Ok
+Успешно
+2013-Dec-06 18:06:02 Доступ к серверу обновлений (check_update): Ok
+Успешно
+2013-Dec-06 18:06:02 HTTP авторизация (check_http_auth): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:02 Создание и запуск файла (check_exec): Ok
+Connection to jinx.morrkes.tmweb.ru:80	Success
+
+Успешно
+2013-Dec-06 18:06:02 Функция getimagesize для swf (check_getimagesize): Ok
+Успешно
+2013-Dec-06 18:06:03 Версия MySQL сервера (check_mysql_bug_version): Ok
+Успешно
+2013-Dec-06 18:06:04 Время на БД и веб сервере (check_mysql_time): Ok
+Успешно
+2013-Dec-06 18:06:04 Режим работы MySQL (check_mysql_mode): Ok
+Успешно
+2013-Dec-06 18:06:04 Кодировка соединения (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Успешно
+2013-Dec-06 18:06:04 Кодировка базы данных (check_mysql_db_charset): Ok
+CHARSET=utf8, COLLATION=utf8_unicode_ci
+Успешно
+2013-Dec-06 18:06:04 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+Успешно
+2013-Dec-06 18:06:04 Структура базы данных (check_mysql_table_structure): Ok
+0% done
+2013-Dec-06 18:06:04 Структура базы данных (check_mysql_table_structure): Ok
+4% done
+2013-Dec-06 18:06:05 Структура базы данных (check_mysql_table_structure): Ok
+8% done
+2013-Dec-06 18:06:05 Структура базы данных (check_mysql_table_structure): Ok
+12% done
+2013-Dec-06 18:06:05 Структура базы данных (check_mysql_table_structure): Ok
+16% done
+2013-Dec-06 18:06:05 Структура базы данных (check_mysql_table_structure): Ok
+20% done
+2013-Dec-06 18:06:05 Структура базы данных (check_mysql_table_structure): Ok
+24% done
+2013-Dec-06 18:06:05 Структура базы данных (check_mysql_table_structure): Ok
+28% done
+2013-Dec-06 18:06:06 Структура базы данных (check_mysql_table_structure): Ok
+32% done
+2013-Dec-06 18:06:06 Структура базы данных (check_mysql_table_structure): Ok
+36% done
+2013-Dec-06 18:06:06 Структура базы данных (check_mysql_table_structure): Ok
+40% done
+2013-Dec-06 18:06:07 Структура базы данных (check_mysql_table_structure): Ok
+44% done
+2013-Dec-06 18:06:07 Структура базы данных (check_mysql_table_structure): Ok
+48% done
+2013-Dec-06 18:06:07 Структура базы данных (check_mysql_table_structure): Ok
+52% done
+2013-Dec-06 18:06:07 Структура базы данных (check_mysql_table_structure): Ok
+56% done
+2013-Dec-06 18:06:07 Структура базы данных (check_mysql_table_structure): Ok
+60% done
+2013-Dec-06 18:06:08 Структура базы данных (check_mysql_table_structure): Ok
+64% done
+2013-Dec-06 18:06:08 Структура базы данных (check_mysql_table_structure): Ok
+68% done
+2013-Dec-06 18:06:08 Структура базы данных (check_mysql_table_structure): Ok
+72% done
+2013-Dec-06 18:06:08 Структура базы данных (check_mysql_table_structure): Ok
+76% done
+2013-Dec-06 18:06:08 Структура базы данных (check_mysql_table_structure): Ok
+80% done
+2013-Dec-06 18:06:08 Структура базы данных (check_mysql_table_structure): Ok
+84% done
+2013-Dec-06 18:06:09 Структура базы данных (check_mysql_table_structure): Ok
+88% done
+2013-Dec-06 18:06:09 Структура базы данных (check_mysql_table_structure): Ok
+92% done
+2013-Dec-06 18:06:09 Структура базы данных (check_mysql_table_structure): Ok
+96% done
+2013-Dec-06 18:06:09 Структура базы данных (check_mysql_table_structure): Ok
+Успешно
